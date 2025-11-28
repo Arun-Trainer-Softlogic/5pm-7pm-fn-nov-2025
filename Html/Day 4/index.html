@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- get or post  -->
+
+    <h1>forms</h1>
+
+    <form action="">
+      <label for="name">name</label>
+      <input type="text" name="name" placeholder="ENTER YOUR FULL NAME " />
+
+      <label for="age">Age</label>
+      <input type="number" name="age" />
+
+      <label for="dob">DOB</label>
+      <input type="date" name="dob" />
+
+      <label for="email">Email</label>
+      <input type="email" required name="email" />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" />
+
+      <label for="gender">Gender</label>
+      <label>male</label>
+      <input type="radio" name="gender" value="male" />
+      <label>Female</label>
+      <input type="radio" name="gender" value="female" />
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <label>Reading</label>
+        <input type="checkbox" name="hobbies" value="reading" />
+        <label>Traveling</label>
+        <input type="checkbox" name="hobbies" value="traveling" />
+        <label>Coding</label>
+        <input type="checkbox" name="hobbies" value="coding" />
+      </fieldset>
+
+      <select name="country">
+        <option selected>Select your country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="japan">Japan</option>
+        <option value="china">China</option>
+      </select>
+
+      <fieldset>
+        <legend>Sports</legend>
+        <label for="sports">Sports you want</label>
+        <label>Kabadi</label>
+        <input type="radio" id="kabadi" value="kabadi" name="sports" />
+        <label>Football</label>
+        <input type="radio" id="football" value="football" name="sports" />
+        <label>Volleyball</label>
+        <input type="radio" id="volleyball" value="volleyball" name="sports" />
+      </fieldset>
+
+      <textarea name="comments" id="" rows="10" cols="60">notes</textarea>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
