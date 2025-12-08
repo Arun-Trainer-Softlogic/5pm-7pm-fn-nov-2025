@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]{
+            accent-color:yellow;
+
+        }
+        button:hover{
+            background-color: purple;
+            color: white;
+        }
+        input:focus{
+            border: 2px solid dodgerblue;
+            background-color: yellow;
+           
+        }
+
+        .card::before{
+            content:"🌟";
+
+        }
+
+        .card::after{
+            content: "💡";
+        }
+        .box{
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(182, 38, 38);
+            background: rgb(255, 255, 66);
+            padding: 20px;
+            margin: 30px;
+                    text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+
+
+    <form action="">
+        <label for="nam">Name</label>
+        <input type="text" placeholder="Enter name" name="nam">
+
+        <label for="em">Email</label>
+        <input type="email" placeholder="Enter email" name="em">
+        <input type="checkbox" id="agree" name="agree" value="Accepted">
+        <label for="agree"  >Accept Terms</label>
+        <input type="submit" >
+        <button>Click me boy</button>
+    </form>
+
+
+
+    <div class="card">This is the card that we created </div>
+
+    <div class="box">Box model example in this box </div>
+    
+</body>
+</html>
