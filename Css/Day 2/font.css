@@ -1,0 +1,41 @@
+:root {
+    --text : #1a2c55;
+    --muted : #6b7280;
+    --accent : #0ea5e9;
+    
+}
+
+.article{
+    max-width: 680px;
+    margin: 24px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text);
+
+}
+
+.article h1{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.article p{
+    text-align: left;
+    line-height: 1.65;
+    font-size: 1.0625rem;
+
+
+}
+.article .byline {
+    color: var(--muted);
+    text-align: center;
+    
+}
+strong{
+    text-decoration: underline;
+}
+.note {
+    color: var(--accent);
+    text-align: right;
+    font-size: 0.95rem;
+    
+}

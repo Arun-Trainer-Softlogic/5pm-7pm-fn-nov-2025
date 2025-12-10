@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing </title>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: yellow;
+        }
+        .box{
+            width: 200px;
+            padding: 20px;
+            border: 5px solid ;
+            background-color: aquamarine;
+        }
+        .content-box{
+            box-sizing: content-box;
+            border-color: rgb(245, 89, 115);
+        }
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box content-box">
+            <strong>content-box</strong>
+            <div>declared width = 200px padding & border added </div>
+        </div>
+        <div class="box border-box">
+            <strong>Border-box</strong>
+            <div>declared width = 200px includes padding & border</div>
+        </div>
+    </div>
+</body>
+</html>
