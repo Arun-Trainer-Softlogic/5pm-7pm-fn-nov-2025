@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr );
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            height: 200px;
+            border: 1px solid black ;
+
+
+
+        }
+
+           .container div {
+        background-color: #2196f3;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+        /* line 2 , coloum line 3 , end at row line 4, colum line 5  */
+        .item-a{
+            grid-area: 2 / 3 / 4 / 5;
+           
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+   
+
+   
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-a" style="background-color: burlywood;">Item A (2/3/4/5)</div>
+      <div class="item-b">Item B</div>
+      <div class="item-c">Item C</div>
+      <div class="item-d">Item C</div>
+    </div>
+  </body>
+</html>
