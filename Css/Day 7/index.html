@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box1 {
+        width: 150px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+
+        transition-property: background-color;
+        transition-duration: 1s;
+      }
+      .box2 {
+        width: 150px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+
+        transition-property: width;
+        transition-duration: 1s;
+      }
+
+      .box3 {
+        width: 150px;
+        height: 100px;
+        background-color: purple;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        transition: transform 1s ease-in-out;
+      }
+      .box4 {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(234, 255, 0);
+        color: rgb(21, 20, 20);
+        text-align: center;
+        line-height: 100px;
+        transition: background-color 0.5s ease;
+      }
+
+      .box5 {
+        width: 150px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        transition: width 0.5s ease, background-color 3s ease;
+      }
+
+      .box1:hover {
+        background-color: red;
+      }
+      .box2:hover {
+        width: 250px;
+      }
+      .box3:hover {
+        transform: translate(200px);
+      }
+      .box4:hover {
+        background-color: darkcyan;
+      }
+      .box5:hover {
+        width: 200px;
+        background-color: black;
+      }
+      .btn {
+        padding: 15px 30px;
+        background: green;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn:hover {
+        background-color: darkgreen;
+        transform: scale(1.2);
+      }
+      .card {
+        width: 200px;
+        padding-right: 200px;
+        background: #e09191;
+        text-align: center;
+        transition: box-shadow 2s, padding 4s ease;
+
+        /* transition: property duration timing-function delay; */
+      }
+
+      .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+        transform: translateX(50px);
+      }
+
+      .box6 {
+        width: 150px;
+        height: 100px;
+        background: red;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+
+        animation-name: colorChange;
+        animation-duration: 1s;
+      }
+      .box7 {
+        width: 100px;
+        height: 100px;
+        background: rgb(0, 255, 106);
+        color: white;
+        text-align: center;   
+        line-height: 100px;
+        border-radius: 50%;
+
+        animation: bounce 1s ease-in-out infinite;
+      }
+
+      @keyframes colorChange {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-40px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Hover</div>
+    <div class="box2">Hover</div>
+    <div class="box3">Hover</div>
+    <div class="box4">Hover</div>
+    <div class="box5">Hover</div>
+    <div class="box6">Hover6</div>
+    <div class="box7">Hover7</div>
+
+    <button class="btn">Click Me</button>
+
+    <div class="card">Product Card</div>
+  </body>
+</html>
