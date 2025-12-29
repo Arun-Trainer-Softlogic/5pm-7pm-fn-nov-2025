@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate</title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter your Number" />
+
+    <input type="number" id="num2" placeholder="Enter your sec number" />
+
+    <button onclick="calculate()">calculate</button>
+    <p id="result"></p>
+
+    <button onclick="increase()">Increse</button>
+    <p id="count">0</p>
+
+    <script>
+      function calculate() {
+        let x = Number(document.getElementById("num1").value);
+        let y = Number(document.getElementById("num2").value);
+
+        document.getElementById("result").innerHTML =
+          "addition" +
+          (x + y) +
+          "<br>" +
+          "subtraction " +
+          (x - y) +
+          "<br>" +
+          "multiplication" +
+          x * y +
+          "<br>" +
+          "Division" +
+          x / y +
+          "<br>";
+      }
+
+      let count = 0;
+
+      function increase() {
+        count += 1;
+        document.getElementById("count").innerText = count;
+      }
+    </script>
+  </body>
+</html>

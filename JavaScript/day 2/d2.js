@@ -84,18 +84,18 @@
 
 
 
-let user = {
-    name : "arun",
-    age : 25,
+// let user = {
+//     name : "arun",
+//     age : 25,
 
-}
+// }
 
 
-console.log( typeof user);
+// console.log( typeof user);
 
-let ar = null ;
+// let ar = null ;
 
-console.log( ar);
+// console.log( ar);
 
 
 
