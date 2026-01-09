@@ -20,13 +20,13 @@
 // }
 
 
-let arr = [
-    ["name ","Age"],
-    ["Arun","24"],
-    ["Ravi","22"]
-]
+// let arr = [
+//     ["name ","Age"],
+//     ["Arun","24"],
+//     ["Ravi","22"]
+// ]
 
-for (let row of arr){
-    console.log(row);
+// for (let row of arr){
+//     console.log(row);
     
-}
+// }

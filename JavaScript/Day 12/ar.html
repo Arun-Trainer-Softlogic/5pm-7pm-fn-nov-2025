@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .highlight{
+            background-color: yellow;
+            padding: 10px;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }        
+    </style>
+</head>
+<body>
+    <div id="card">This is a card</div>
+
+
+
+    <button id="add">Add color </button>
+    <button id="remove">Remove Color </button>
+    <button id="toggle">toggle dark Mode</button>
+
+
+
+    <div id="list"></div>
+
+
+    <button onclick="addItem()">Create a item </button>
+    <button onclick="removeItem()">remove a item </button>
+
+
+    <script>
+
+        const card = document.getElementById("card");
+        const addBtn = document.getElementById("add");
+        const removeBtn = document.getElementById("remove");
+        const toggleBtn = document.getElementById("toggle");
+        const list = document.getElementById("list")
+
+
+        function addItem(){
+            const newItem = document.createElement('p')
+
+            newItem.textContent = "i am the new Item!"
+            newItem.classList.add('highlight')
+
+            list.appendChild(newItem)
+
+            
+        }
+
+        function removeItem(){
+            const lastItem = list.lastElementChild;
+            if(lastItem){
+                list.removeChild(lastItem)
+            }
+        }
+
+        addBtn.addEventListener("click" , function(){
+            card.classList.add("highlight")
+        })
+
+
+        removeBtn.addEventListener("click", function(){
+            card.classList.remove("highlight")
+        })
+
+        toggleBtn.addEventListener("click", function(){
+            card.classList.toggle("dark")
+        })
+
+
+
+
+    </script>
+
+</body>
+</html>
