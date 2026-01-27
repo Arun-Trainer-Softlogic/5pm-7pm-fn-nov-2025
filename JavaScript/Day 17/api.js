@@ -18,20 +18,17 @@
 //     console.error("Error Fetching Followers : " , error)
 // })
 
-async function getFollowers() {
-    try{
-        const response = await fetch("https://api.github.com/users/arun-cloud-dev/followers")
-        const followers = await response.json();
-        console.log(followers);
-    }catch(error){
-        console.error(error)
-    }
-}
+// async function getFollowers() {
+//     try{
+//         const response = await fetch("https://api.github.com/users/arun-cloud-dev/followers")
+//         const followers = await response.json();
+//         console.log(followers);
+//     }catch(error){
+//         console.error(error)
+//     }
+// }
 
 
-getFollowers();
-
-
-
+// getFollowers();
 
 
