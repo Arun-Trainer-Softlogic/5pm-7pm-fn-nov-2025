@@ -15,4 +15,4 @@
 -- ALTER TABLE students
 -- ADD age int;
 
-select * from students ;
+-- select * from students ;
