@@ -63,7 +63,72 @@
 -- ('TempStaff', 'temp@company.com', '7000000002', 20000, '2024-06-15', 4);
 
 
+
+
+-- select e.emp_name , d.dept_name 
+-- from employees e
+-- join departments d on e.dept_id = d.dept_id 
+
 -- select * from departments;
+
+-- select emp_name , salary 
+-- from employees 
+-- where salary > 40000
+-- limit 4;
+
+
+-- select d.dept_name , avg(e.salary) as avg_sala
+-- from employees e
+-- join departments d on e.dept_id = d.dept_id 
+-- group by d.dept_name  
+
+
+-- SELECT dept_id, sum(salary) AS total_sals
+-- FROM employees
+-- GROUP BY dept_id;
+
+
+
+-- SELECT d.dept_name, AVG(e.salary) AS avg_salary
+-- FROM employees e
+-- JOIN departments d ON e.dept_id = d.dept_id
+-- GROUP BY d.dept_name;
+
+
+-- SELECT dept_id, COUNT(*) AS total_employees
+-- FROM employees
+-- WHERE salary > 40000
+-- GROUP BY dept_id;
+
+-- SELECT dept_id, AVG(salary)
+-- FROM employees
+-- GROUP BY dept_id;
+
+
+select dept_id , avg(salary) as avg_salary
+from employees 
+group by depT_id 
+having avg(salary) > 40000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
