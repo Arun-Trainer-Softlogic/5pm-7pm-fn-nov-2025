@@ -105,10 +105,10 @@
 -- GROUP BY dept_id;
 
 
-select dept_id , avg(salary) as avg_salary
-from employees 
-group by depT_id 
-having avg(salary) > 40000;
+-- select dept_id , avg(salary) as avg_salary
+-- from employees 
+-- group by depT_id 
+-- having avg(salary) > 40000;
 
 
 
