@@ -42,10 +42,10 @@
 -- where emp_name like 's%'
 
 
-select e.emp_name , d.dept_name 
-from employees e 
-inner join departments d 
-on e.dept_id = d.dept_id
+-- select e.emp_name , d.dept_name 
+-- from employees e 
+-- inner join departments d 
+-- on e.dept_id = d.dept_id;
 
 
 
