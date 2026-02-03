@@ -10,15 +10,15 @@
 
 
 
--- create table employees (
---   emp_id INT PRIMARY KEY AUTO_INCREMENT,
---   emp_name VARCHAR(50) NOT NULL,
---   email varchar(100) unique,
---   salary decimal(10,2) check (salary > 5000 ),
---   dept_id int ,
---   status varchar(20) default 'active',
---   foreign key (dept_id) references departments(dept_id)
--- );
+create table employees (
+  emp_id INT PRIMARY KEY AUTO_INCREMENT,
+  emp_name VARCHAR(50) NOT NULL,
+  email varchar(100) unique,
+  salary decimal(10,2) check (salary > 5000 ),
+  dept_id int ,
+  status varchar(20) default 'active',
+  foreign key (dept_id) references departments(dept_id)
+);
 
 -- alter table employees
 -- modify phone varchar(25)
