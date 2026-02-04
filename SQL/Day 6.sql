@@ -73,6 +73,46 @@
 -- where e.hire_date > '2022-12-31'
 
 
+-- =========================================
+
+-- Window Function 
+
+-- select dept_id , avg(salary)
+-- from employees 
+-- group by dept_id;
+
+-- select emp_name , salary,
+-- avg(salary) over (partition by dept_id )as dept_avg_salary 
+-- from employees ;
+
+
+-- function () over (
+-- parthition by column 
+-- order by column 
+-- )
+
+-- select emp_name , salary ,
+-- sum(salary) over() as total_salary
+-- from employees ;
+
+
+-- select emp_name , salary , 
+-- row_number() over( order by salary desc) as row_num 
+-- from employees  
+
+
+-- select emp_name , salary ,
+-- dense_rank() over (order by salary desc ) as rnks
+-- from employees ;
+
+-- SELECT emp_name, dept_id, salary,
+-- DENSE_RANK() OVER (PARTITION BY dept_id ORDER BY salary DESC) AS dept_rank
+-- FROM employees;
+
+-- select emp_name , dept_id , salary,
+-- avg(salary) over (Partition by dept_id ) as avg_salary 
+-- from employees 
+--  
 
 
 

@@ -141,3 +141,36 @@
 
 
 
+
+
+
+
+-- | emp_id | skills    |
+-- | ------ | --------- |
+-- | 1      | java
+-- | 1      | , SQL |
+
+
+| emp_id | project_id | emp_name |
+| ------ | ---------- | -------- |
+| 1      | P1         | Arun     |
+
+
+
+2NF Solution
+
+Employees(emp_id, emp_name,)
+
+Projects(project_id, project_name)
+
+Employee_Project(emp_id, project_id)
+
+
+
+-- emp_id => dept_id => dept_name 
+
+employees (emp_id , emp_nname , dept_id )
+
+deartmenst (dept_id , dept_name )
+
+
